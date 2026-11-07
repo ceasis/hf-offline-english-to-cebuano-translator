@@ -1,0 +1,295 @@
+{
+  "version": "0.1.0-research",
+  "language_pair": [
+    "en",
+    "ceb"
+  ],
+  "product_status": "Research alternate; not the translation model bundled in the iOS app",
+  "files": {
+    "qnvoice-cebuano-adapter.gguf": {
+      "sha256": "ed96b374ddddce87549d047352cced7d08f256abf4a4868effeb4afb362a60d9",
+      "bytes": 262560
+    },
+    "qnvoice-cebuano-compact.gguf": {
+      "sha256": "bc8dd32a471a3ab4a6244e3bb43907961d6fa4d9b42b5f32364213c4939f9556",
+      "bytes": 978348256
+    }
+  },
+  "baseline": {
+    "repository": "Helsinki-NLP/opus-mt-en-ceb",
+    "revision": "e94aee550a4d15c5b5da28a4be4fb2cb0dede50a",
+    "format": "QnVoice's ONNX dynamic int8 export"
+  },
+  "base": {
+    "repository": "IndexTeam/Index-Translate-2B-GGUF",
+    "revision": "3a0eca6ce931d88d00614d427ab3ed8ff0743902",
+    "original_q4_k_m_sha256": "044b313d29342bd3b2c77cbb64023ca0d209bd9b3247763f9d162767ef2d746a",
+    "license": "Apache-2.0",
+    "vocabulary": [
+      248320,
+      55000
+    ]
+  },
+  "adapter": {
+    "license": "CC-BY-4.0",
+    "rank": 16,
+    "block": 23,
+    "projection": "mlp.down_proj",
+    "selected_step": 60,
+    "strength": 0.08,
+    "seed": 72101,
+    "drawn_from": {
+      "qnvoice_bilingual": 260,
+      "tatoeba_cc0_synthetic": 254,
+      "qnvoice_original_synthetic": 6
+    },
+    "eligible_pairs": 514,
+    "local_validation_pairs": 40,
+    "synthetic_target_model": "yibie/Index-Translate-2B-MLX-4bit@47de2e96d051cc52ad9459cd78cc578ba6311d41"
+  },
+  "runtime": {
+    "repository": "tc-mb/llama.cpp-omni",
+    "revision": "e0eca9d8f57ac8f5a5ad6191a8007b93436c1e71",
+    "context_tokens_per_sequence": 512,
+    "generation_token_limit": 192,
+    "decoding": "greedy; no reasoning",
+    "evaluation_platform": "Apple M1 Pro, macOS"
+  },
+  "datasets": {
+    "flores_200": "https://github.com/facebookresearch/flores/tree/main/flores200",
+    "flores_200_archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6",
+    "tatoeba": "https://object.pouta.csc.fi/OPUS-Tatoeba/v2026-07-08/moses/ceb-en.txt.zip"
+  },
+  "related_research_doi": "10.5281/zenodo.24032369",
+  "results": {
+    "devtest": {
+      "split": "devtest",
+      "pairs": 1012,
+      "baseline": {
+        "chrf++": 52.6994,
+        "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu": 24.1174,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+        "empty": 0
+      },
+      "candidate": {
+        "chrf++": 55.3672,
+        "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu": 28.2761,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+        "empty": 0
+      },
+      "paired_bootstrap_samples": 2000,
+      "seed": 72101,
+      "delta": {
+        "chrf++": {
+          "score": 2.6678,
+          "ci95": [
+            1.9692,
+            3.3604
+          ]
+        },
+        "bleu": {
+          "score": 4.1587,
+          "ci95": [
+            3.26,
+            5.0689
+          ]
+        }
+      },
+      "passes_primary_metric": true
+    },
+    "conversation": {
+      "split": "conversation",
+      "pairs": 40,
+      "baseline": {
+        "chrf++": 48.9592,
+        "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu": 24.2349,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+        "empty": 0
+      },
+      "candidate": {
+        "chrf++": 55.4204,
+        "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu": 31.256,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+        "empty": 0
+      },
+      "paired_bootstrap_samples": 2000,
+      "seed": 72101,
+      "delta": {
+        "chrf++": {
+          "score": 6.4612,
+          "ci95": [
+            1.3472,
+            11.8493
+          ]
+        },
+        "bleu": {
+          "score": 7.0211,
+          "ci95": [
+            -0.7012,
+            15.454
+          ]
+        }
+      },
+      "passes_primary_metric": true,
+      "literal_digit_retention": {
+        "pairs": 8,
+        "baseline": 8,
+        "candidate": 8
+      }
+    },
+    "tatoeba": {
+      "split": "tatoeba",
+      "pairs": 424,
+      "baseline": {
+        "chrf++": 55.0204,
+        "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu": 27.744,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+        "empty": 0
+      },
+      "candidate": {
+        "chrf++": 40.9954,
+        "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+        "bleu": 14.5239,
+        "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+        "empty": 0
+      },
+      "paired_bootstrap_samples": 2000,
+      "seed": 72101,
+      "delta": {
+        "chrf++": {
+          "score": -14.025,
+          "ci95": [
+            -16.7436,
+            -11.3621
+          ]
+        },
+        "bleu": {
+          "score": -13.2201,
+          "ci95": [
+            -16.9959,
+            -9.8857
+          ]
+        }
+      },
+      "passes_primary_metric": false
+    },
+    "dev128": {
+      "base": {
+        "split": "dev",
+        "pairs": 128,
+        "baseline": {
+          "chrf++": 52.6361,
+          "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bleu": 23.7258,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "empty": 0
+        },
+        "candidate": {
+          "chrf++": 54.9528,
+          "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bleu": 26.9758,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "empty": 0
+        },
+        "paired_bootstrap_samples": 2000,
+        "seed": 72101,
+        "delta": {
+          "chrf++": {
+            "score": 2.3167,
+            "ci95": [
+              0.4286,
+              4.2744
+            ]
+          },
+          "bleu": {
+            "score": 3.25,
+            "ci95": [
+              0.8334,
+              5.6906
+            ]
+          }
+        },
+        "passes_primary_metric": true
+      },
+      "08": {
+        "split": "dev",
+        "pairs": 128,
+        "baseline": {
+          "chrf++": 52.6361,
+          "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bleu": 23.7258,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "empty": 0
+        },
+        "candidate": {
+          "chrf++": 55.0401,
+          "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bleu": 27.2139,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "empty": 0
+        },
+        "paired_bootstrap_samples": 2000,
+        "seed": 72101,
+        "delta": {
+          "chrf++": {
+            "score": 2.404,
+            "ci95": [
+              0.5327,
+              4.4152
+            ]
+          },
+          "bleu": {
+            "score": 3.4881,
+            "ci95": [
+              1.0796,
+              5.7474
+            ]
+          }
+        },
+        "passes_primary_metric": true
+      },
+      "16": {
+        "split": "dev",
+        "pairs": 128,
+        "baseline": {
+          "chrf++": 52.6361,
+          "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bleu": 23.7258,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "empty": 0
+        },
+        "candidate": {
+          "chrf++": 54.9254,
+          "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+          "bleu": 27.1767,
+          "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1",
+          "empty": 0
+        },
+        "paired_bootstrap_samples": 2000,
+        "seed": 72101,
+        "delta": {
+          "chrf++": {
+            "score": 2.2893,
+            "ci95": [
+              0.5278,
+              4.0586
+            ]
+          },
+          "bleu": {
+            "score": 3.4509,
+            "ci95": [
+              1.0707,
+              5.7864
+            ]
+          }
+        },
+        "passes_primary_metric": true
+      }
+    }
+  }
+}

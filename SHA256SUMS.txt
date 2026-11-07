@@ -1,0 +1,2 @@
+ed96b374ddddce87549d047352cced7d08f256abf4a4868effeb4afb362a60d9  qnvoice-cebuano-adapter.gguf
+bc8dd32a471a3ab4a6244e3bb43907961d6fa4d9b42b5f32364213c4939f9556  qnvoice-cebuano-compact.gguf

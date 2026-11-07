@@ -1,0 +1,173 @@
+{
+  "metrics": {
+    "count": 40,
+    "empty": 0,
+    "seconds": 0.2842,
+    "chrf++": 48.9592,
+    "chrf++_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.5.1",
+    "bleu": 24.2349,
+    "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.5.1"
+  },
+  "rows": [
+    {
+      "id": 1,
+      "output": "Mabungkag ba ang elebetor, ug dili na usab kutob sa taas?"
+    },
+    {
+      "id": 2,
+      "output": "Nagkinahanglan pa kamig duha ka dugang lingkoranan, apan wala na kami magkinahanglag laing lamesa."
+    },
+    {
+      "id": 3,
+      "output": "Palihog pangutan - a ako ug 165 pesos, dili 195."
+    },
+    {
+      "id": 4,
+      "output": "Kinahanglang moadto ako sa pantalan sa alas 6:45 ugma sa buntag."
+    },
+    {
+      "id": 5,
+      "output": "Gibiyaan sa akong igsoong babaye ang iyang pitaka diha sa taksi."
+    },
+    {
+      "id": 6,
+      "output": "Ang lansa gikan sa Ormoc nalangan ug 30 minutos."
+    },
+    {
+      "id": 7,
+      "output": "Ayaw pag - adto sa Ganghaan 8. Ang among ganghaan maoy Ganghaan 3."
+    },
+    {
+      "id": 8,
+      "output": "Gikinahanglan ko ang sulat, apan dili pa kami andam sa pagbiya."
+    },
+    {
+      "id": 9,
+      "output": "Mibalibad ako nga walay asukar diha sa kape."
+    },
+    {
+      "id": 10,
+      "output": "Kon kanselahon ang lantsa, magpabilin kami sa Cebu karong gabii."
+    },
+    {
+      "id": 11,
+      "output": "Dili mi mopuyo sa hotel tapad sa bangko."
+    },
+    {
+      "id": 12,
+      "output": "Mao kini ang akong unang higayon sa Duumaguete."
+    },
+    {
+      "id": 13,
+      "output": "Wala koy kuwarta, modawat ka bag kard?"
+    },
+    {
+      "id": 14,
+      "output": "Ang bata natulog, busa palihog sulti nga hilom."
+    },
+    {
+      "id": 15,
+      "output": "Kini bang mga lingkoranana nahimutang, o kita ba makalingkod dinhi?"
+    },
+    {
+      "id": 16,
+      "output": "Mag - text dayon ko nimo inig - abot sa bus."
+    },
+    {
+      "id": 17,
+      "output": "Mas masabtan nako ang pipila ka Cebuano, apan dili kaayo ko makasulti niana."
+    },
+    {
+      "id": 18,
+      "output": "Ang prisyo naglakip na ba sa 50 ka ubos nga bayranan sa pagpanganak?"
+    },
+    {
+      "id": 19,
+      "output": "Among gireserba ang lawak sa Mayo 21, dili Mayo 12."
+    },
+    {
+      "id": 20,
+      "output": "Kon wala silay kan - on, mandoan ko hinuon ang mga noodle."
+    },
+    {
+      "id": 21,
+      "output": "Ang nagdumala anaa sa sulod sa gamayng bulsa sa wala."
+    },
+    {
+      "id": 22,
+      "output": "Mahimo ba nimong isulat ang adres alang kanako?"
+    },
+    {
+      "id": 23,
+      "output": "Ang karatula nag - ingon nga ang tindahan gibuksan sa 10:15."
+    },
+    {
+      "id": 24,
+      "output": "Ayawg duol sa bentana, kay dinhi init pa kaayo."
+    },
+    {
+      "id": 25,
+      "output": "Katulo akong mitawag, apan walay mitubag."
+    },
+    {
+      "id": 26,
+      "output": "Wala ko mangayog refund, kondili ilis pod."
+    },
+    {
+      "id": 27,
+      "output": "Mikanaog kami sa sayop nga hunonganan ug kinahanglang mobalik."
+    },
+    {
+      "id": 28,
+      "output": "Ang pagkaon maayo, apan ang sabaw parat ra kaayo."
+    },
+    {
+      "id": 29,
+      "output": "Ayaw pag-isalikway ang resibo, kinahanglanon ko kini ugma."
+    },
+    {
+      "id": 30,
+      "output": "Ang tubig ba gikan niining gripoa luwas imnon?"
+    },
+    {
+      "id": 31,
+      "output": "Nagdala ako ug payong engkasog moulan sa ulahi."
+    },
+    {
+      "id": 32,
+      "output": "Nakabayad na kami sa mga tiket sa Internet."
+    },
+    {
+      "id": 33,
+      "output": "Ang bag nga may pulang estrap maoy akoa."
+    },
+    {
+      "id": 34,
+      "output": "Ang doktor miingon nga mobalik sa Lunes, dili sa Miyerkoles."
+    },
+    {
+      "id": 35,
+      "output": "Mabalibaran ba nimog diyutay ang musika?"
+    },
+    {
+      "id": 36,
+      "output": "Kon libre ka, duna tay makaon human sa trabaho."
+    },
+    {
+      "id": 37,
+      "output": "Ang akong paglupad sa alas 7:20, apan ang pagsakay nagsugod sa 6:50."
+    },
+    {
+      "id": 38,
+      "output": "Dili ko moorder ug pasayan kay alerdyik ko niana."
+    },
+    {
+      "id": 39,
+      "output": "Mahimo ba nga ikaw mosulti sa tinuod? Dili ako makadungog kanimo sa ulan."
+    },
+    {
+      "id": 40,
+      "output": "Abi nakog ang tigom karong adlawa, apan gibalhin nila kini sa Huwebes."
+    }
+  ]
+}

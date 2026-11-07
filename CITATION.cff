@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: Please credit the QnVoice translation release and cite the Cebuano speech research that preceded it.
+title: QnVoice Offline English-to-Cebuano Translation
+type: software
+version: 0.1.0-research
+authors:
+  - name: QnVoice
+    affiliation: QnSub Software Solutions
+repository-code: https://github.com/ceasis/hf-offline-english-to-cebuano-translator
+url: https://huggingface.co/CholoAsis/qnvoice-cebuano-translation/tree/27efd4da6be61a51219234ca584586cb084a6133
+references:
+  - type: generic
+    title: Offline Cebuano Text to Speech in QnVoice for iOS with VoxCPM2
+    authors:
+      - name: QnVoice
+        affiliation: QnSub Software Solutions
+    year: 2026
+    doi: 10.5281/zenodo.24032369
+    url: https://doi.org/10.5281/zenodo.24032369
