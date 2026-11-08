@@ -58,4 +58,6 @@ python tools/score.py --candidate build/conversation-qnvoice.tsv
 
 The compact model uses Apache 2.0 and the QnVoice adapter uses CC BY 4.0. Both permit commercial reuse under their terms. [Licenses and attribution](LICENSES.md)
 
-The citation file credits this translation release and references the related QnVoice Cebuano text-to-speech paper. The translation benchmark and the speech paper report separate experiments. [Citation file](CITATION.cff), [Cebuano speech paper on Zenodo](https://doi.org/10.5281/zenodo.24032369)
+The translator preprint describes the model, benchmark protocol, and archived translation examples. [Translator preprint on Zenodo](https://doi.org/10.5281/zenodo.24045948), [Citation file](CITATION.cff)
+
+The companion speech paper covers the separate Cebuano synthesis pipeline. [Cebuano speech preprint](https://doi.org/10.5281/zenodo.24032369)
